@@ -46,7 +46,8 @@
                     </div>
                 </div>
                 <div class="d-none d-md-block d-lg-block">
-                    <button class="btn btn-sm btn-outline-secondary" type="button">Register</button>
+                    <button class="btn btn-sm btn-outline-secondary" type="button"><a
+                            href="form.html">Register</a></button>
                 </div>
             </div>
         </nav>
@@ -59,7 +60,7 @@
         <!-----------------
          slider start    
     ------------------->
-        <section class="container mb-5">
+        <section class="container mb-5 mt-5">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -310,7 +311,53 @@
                     <p>Before join with us please know about us properly then slap the register button</p>
                 </div>
                 <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-light"><a href="form.html">Register now</a></button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Register now
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                placeholder="input your email" aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="input your password">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
@@ -465,7 +512,7 @@
             frequanty ask question start
                  ----------------------->
         <section class="container my-5 pt-5 pb-5">
-            <div class=" my-5">
+            <div class=" my-lg-5">
                 <div class="text-center mb-5">
                     <h1 class="my-4">Frequently Asked Questions</h1>
                     <p class="m-3">here we include some common questoin's ans. most of the visitor's of this site <br>
@@ -476,8 +523,8 @@
 
                 </div>
                 <!-- accordion -->
-                <div class="mx-5">
-                    <div class="mx-5">
+                <div class="mx-lg-5">
+                    <div class="mx-lg-5">
                         <div class="accordion mx-5" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -612,6 +659,7 @@
               companies for pc 
              -------------------->
     </main>
+    <!-- footer -->
     <footer class="bg-dark py-5">
         <div>
             <div class="text-center text-white my-3">
